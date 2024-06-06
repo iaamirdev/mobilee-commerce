@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Details</title>
+    <link rel="stylesheet" href="fetch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+ <header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Categories</a>
+        <a href="#">Deals</a>
+        <a href="new_arrivals.html">New Arrivals</a>
+        <a href="#">Contact</a>
+        <a href="#">About Us</a>
+        <a href="#">Cart</a>
+        <a href="#">Account</a>
+        <div class="search-container">
+            <input type="search" class="search-bar" placeholder="Search" />
+            <i class="fas fa-search search-icon"></i>
+        </div>
+    </nav>
+</header>
+
+    <section class="phone-details" id="phone-details">
+        <!-- Phone details will be displayed here -->
+    </section>
+    <section class="price-section" id="price-section">
+        <h2>Price Details</h2>
+        <div class="price" id="price">
+            <!-- Price details will be displayed here -->
+        </div>
+        <button id="trade-in" class="trade-in">Trade In</button>
+    </section>
+    <section class="reviews-section" id="reviews-section">
+        <h2>Reviews</h2>
+        <div class="reviews" id="reviews">
+            <!-- Reviews will be displayed here -->
+        </div>
+        <div class="write-review">
+            <h3>Write a Review</h3>
+            <textarea id="review-text" placeholder="Write your review here..."></textarea>
+            <div class="rating">
+                <span class="fa fa-star" id="star1"></span>
+                <span class="fa fa-star" id="star2"></span>
+                <span class="fa fa-star" id="star3"></span>
+                <span class="fa fa-star" id="star4"></span>
+                <span class="fa fa-star" id="star5"></span>
+            </div>
+            <button id="submit-review">Submit Review</button>
+        </div>
+    </section>
+    <button id="buy-now" class="buy-now">Buy Now</button>
+
+    <!-- Trade-in Modal -->
+    <div id="trade-in-modal" class="trade-in-modal">
+        <div class="trade-in-modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Trade-In Your Phone</h2>
+            <label for="brand">Brand:</label>
+            <select id="brand">
+                <option value="apple">Apple</option>
+                <option value="samsung">Samsung</option>
+                <option value="google">Google</option>
+                <option value="oneplus">OnePlus</option>
+                <!-- Add more brands as needed -->
+            </select>
+            <label for="condition">Condition:</label>
+            <select id="condition">
+                <option value="new">New</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+                <option value="poor">Poor</option>
+            </select>
+            <button id="fetch-trade-in-value">Get Trade-In Value</button>
+            <div id="trade-in-value"></div>
+        </div>
+    </div>
+
+    <script src="fetch.js"></script>
+</body>
+</html>
